@@ -1,0 +1,117 @@
+
+<div class="container">
+    <img src="assets/img/111ContactUsHead_BAckup.jpg" style="width:100%;">
+</div>
+
+<div class="header">
+    <br><br><br><br>
+    Get in Touch
+    <br><br><br>
+</div>
+<div class = "detail">
+        V2W offers a range of services from implementation and design, to support, development and re-engineering. If you want <br>
+        to learn how we can help you feel free to drop us a line! We look forward to hearing from you.
+        <br><br><br>
+</div>
+<div class="topParent">
+<div class="parentLeft">
+        
+    <div class="child">
+        <div class = "detail2">
+            <br><br>
+            <label>Send Us a message</label>
+            <br><br>
+        </div>
+        <form (ngSubmit)="onSubmit()" #f="ngForm" action="https://formspree.io/f/xzbykwap" method="POST">
+            <div class = "detail3">
+                <label>Name</label>
+                <br>
+            </div>
+            <input type ="text" class= "foo" id="firstname" ngModel name="firstname" required firstname #firstname="ngModel">
+            <span class="help" *ngIf="!firstname.valid && firstname.touched">Enter a Firstname!</span>
+
+            <br><br>
+            <div class = "detail3">
+                <label>Email</label>
+                <br>
+            </div>
+            <input type ="text" id="email" class="foo" ngModel name="email" required email #email="ngModel">
+            <br><span class="help" *ngIf="!email.valid && email.touched">Enter a Valid e-mail Address!</span>
+
+            <br>
+            <div class = "detail3">
+                <label>Subject</label>
+                <br>
+            </div>
+            <input type ="text" id="company"  class="foo" ngModel name="company">
+
+            <br><br>
+            <div class = "detail3">
+                <label>Message</label>
+                <br>
+            </div>
+            <textarea name="message" id="message" cols="50" rows="5"  class="foo" placeholder="Your Message..." 
+                                        ngModel name="message" required  message #message="ngModel">
+            </textarea>
+            <span class="help" *ngIf="!message.valid && message.touched">Enter a Message!</span>
+            
+            <br><br>
+            <button class="button" [disabled]="!f.valid">Submit</button>
+            <br><br>
+            <div class = "detail4">
+                <label>*See our <b>Privacy Policy</b> for how we handle your data.</label>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="parentRight">
+        
+    <div class="child">
+        <div class = "detail2Right">
+            <br><br>
+            <label>or find Us here</label>
+            <br><br>
+        </div>
+       
+            <div class = "detail3Right">
+                <i class="material-icons">work</i>
+                <label>&nbsp;&nbsp;Head Office</label>
+            </div>
+            <div class = "detail4Right">
+                
+                <label>10/32-1, Kanimadam, Anjugramam Post, 
+                    <br>Kanyakumari - Tamil Nadu, India
+                    <br>629401</label>
+            </div>
+
+            <br><br>
+            <div class = "detail3Right">
+                <i class="material-icons">phone</i>
+                <label>&nbsp;&nbsp;Phone</label>
+            </div>
+            <div class = "detail4Right">
+                
+                <label>India Office: +91 9999 90909</label>
+            </div>
+
+            <br><br>
+            <div class = "detail3Right">
+                <i class="material-icons">email</i>
+                <label>&nbsp;&nbsp;Email</label>
+            </div>
+            <div class = "detail4Right">
+                
+                <label>Contactv2w@v2wss.com</label>
+            </div>
+
+            <br><br>
+        
+    </div>
+</div>
+<div class="topParent"> 
+    <br>
+    <br>
+</div>
+</div>
+  
